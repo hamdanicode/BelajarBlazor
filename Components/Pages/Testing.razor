@@ -1,0 +1,17 @@
+﻿@page "/Testing"
+@rendermode InteractiveServer
+<h3>Hello apa kabar boss @nomor</h3>
+
+<button class="btn btn-primary" @onclick="Tambah">Tambah</button>
+
+<Counter />
+
+@code {
+    private int nomor = 0;
+
+    private void Tambah()
+    {
+        nomor++;
+    }
+
+}
